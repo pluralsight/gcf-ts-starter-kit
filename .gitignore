@@ -7,3 +7,4 @@ coverage
 !.eslintrc.js
 !.gitignore
 !.mocharc.js
+!.gcloudignore

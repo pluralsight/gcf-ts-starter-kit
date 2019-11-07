@@ -4,7 +4,7 @@
     "rootDir": "./src",
     "outDir": "./build",
     "module": "commonjs",
-    "target": "es2017",
+    "target": "es2018",
     "moduleResolution": "node",
     "checkJs": false,
     "allowJs": false,
@@ -12,8 +12,9 @@
     "noUnusedParameters": true,
     "noImplicitAny": true,
     "watch": false,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "resolveJsonModule": true
   },
-  "include": ["./**/*"],
-  "exclude": ["prettier.config.js", "./build/*"]
+  "include": ["**/src/**/*.ts"],
+  "exclude": ["prettier.config.js", "./build/*", "node_modules"]
 }

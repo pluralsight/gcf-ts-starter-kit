@@ -1,14 +1,10 @@
-# TypeScript starter kit
+# TypeScript Google Cloud Function starter kit
 
-A bare-bones starter kit for typescript. My [new-project-script](https://github.com/Rolias/new-project-script) repository is a convenient way to clone a repo, get rid of all the old history and have a shiny new repo to work in.
+A bare-bones starter kit for a typescript Google Cloud Function. My [new-project-script](https://github.com/Rolias/new-project-script) repository is a convenient way to clone a repo, get rid of all the old history and have a shiny new repo to work in.
 
-## Chrome Extensions
+There are some placeholders in this file. For instance in app.ts the function name needs to be changed to match the name of your GCF.
+In package.json, the setProjectStaging and setProjectProduction scripts need to replace the strings that start with `xxx-` with the actual name of your staging and production environments. If you don't have both, just delete the unneeded scripts.
 
-When writing a chrome extension, or I suppose for the front end in general, the `tsconfig.json` will need adjustments:
-
-```json
-    "module": "es6",
-    "moduleResolution": "classic",
-```
-
-For node development in mid-2019, the defaults are fine.
+Once you've made the changes
+`npm run deploy`
+should do it. Fire up Postman and send a request to your URL

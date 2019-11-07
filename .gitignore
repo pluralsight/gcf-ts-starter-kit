@@ -1,6 +1,9 @@
 publish
 node_modules
 build
+out
+coverage
+*.encrypted
 !.eslintrc.js
 !.gitignore
 !.mocharc.js
